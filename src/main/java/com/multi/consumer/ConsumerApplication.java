@@ -25,7 +25,7 @@ public class ConsumerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        //List<User> userListDetail = consumerService.GetUserInfoList(baseurl+"posts");
-        //User userDetails = consumerService.GetUserInfo(baseurl+"/posts/1");
+        consumerService.GetUserInfoList(baseurl+"posts");
+        consumerService.GetUserInfo(baseurl+"/posts/1");
     }
 }
