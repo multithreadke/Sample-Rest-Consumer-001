@@ -27,13 +27,6 @@ public class ConsumerApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("Consume Array List: " + baseurl+"posts");
         List<User> userListDetail = consumerService.GetUserInfoList(baseurl+"posts");
-        for(User extractUserDetails : userListDetail)
-        {
-            System.out.println("User Details=> ID:"+ extractUserDetails.getPostObjectId() + " USERNAME: "+extractUserDetails.getUsername()+ " EMAIL ADDRESS: "+extractUserDetails.getEmailAddress());
-        }
-
-        System.out.println("Consume Object in Json: " + baseurl+"posts/1");
         User userDetails = consumerService.GetUserInfo(baseurl+"/posts/1");
-        System.out.println(userDetails);
     }
 }
