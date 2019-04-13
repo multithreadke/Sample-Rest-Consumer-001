@@ -10,6 +10,6 @@ import java.util.List;
  * Time: 08:23
  */
 public interface ConsumerService {
-    List<User> GetUserInfoList(String baseurl);
-    User GetUserInfo(String baseurl);
+    List<User> getUserInfoList(String baseurl);
+    User getUserInfo(String baseurl);
 }

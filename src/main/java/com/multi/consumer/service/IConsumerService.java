@@ -21,12 +21,12 @@ public class IConsumerService implements ConsumerService{
     private RestTemplate restTemplate;
 
     @Override
-    public List<User> GetUserInfoList(String baseUrl) {
+    public List<User> getUserInfoList(String baseUrl) {
         return Arrays.stream(restTemplate.getForObject(baseUrl, User[].class)).collect(Collectors.toList());
     }
 
     @Override
-    public User GetUserInfo(String baseurl) {
+    public User getUserInfo(String baseurl) {
         return restTemplate.getForObject(baseurl, User.class);
     }
 }
