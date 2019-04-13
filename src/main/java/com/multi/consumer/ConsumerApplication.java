@@ -1,14 +1,11 @@
 package com.multi.consumer;
 
-import com.multi.consumer.model.User;
 import com.multi.consumer.service.ConsumerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.List;
 
 @SpringBootApplication
 public class ConsumerApplication implements CommandLineRunner {
