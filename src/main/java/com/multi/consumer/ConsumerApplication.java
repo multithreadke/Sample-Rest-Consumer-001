@@ -22,7 +22,7 @@ public class ConsumerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        consumerService.GetUserInfoList(baseurl+"posts");
-        consumerService.GetUserInfo(baseurl+"/posts/1");
+        consumerService.getUserInfoList(baseurl+"posts");
+        consumerService.getUserInfo(baseurl+"/posts/1");
     }
 }
